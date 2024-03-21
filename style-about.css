@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+
+.page{
+    width: 450px;
+    background-color: #00aa88;
+    height: 550px;
+    
+    margin: auto;
+    box-shadow:  0px 5px 10px 0px  #000;
+    margin-top: 10px;
+    border-radius: 15px;
+    
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+header .logo{
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+header ul{
+    list-style: none;
+    font-family: cursive;
+    margin-top: 10px;
+    display: flex;
+    
+
+}
+header ul li{
+     padding-left:15px; 
+     cursor: pointer;
+     font-weight: bold;
+     font-size: 18px;
+    
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    transition-duration: 0.3s;
+}
+header ul li a:hover{
+    color: orange;
+    text-shadow: 1px 1px 2px white;
+}
+header ul li:hover{
+    color: orange;
+    text-shadow: 1px 1px 2px white;
+}
+main{
+    font-size: 20px;
+    padding: 10px;
+}
+main .about_us{
+    text-align: center;
+    padding: 10px;
+    font-family: serif;
+}
+main .about_us p{
+    padding-bottom: 10px;
+    font-weight: bold;
+
+}
+main .about_us .me{
+    margin-top: 10px;
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+main .about_us textarea{
+    text-align: center;
+    margin-bottom: 10px;
+    
+    font-family: sans-serif;
+}
+main .about_us img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    
+
+}   
+main .contact{
+    
+    text-align: center;
+}
+main .contact p{
+    padding-bottom: 20px;
+}
+main .contact form{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+}
+main .contact button{
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 10px auto;
+    background-color: orange;
+    outline: none;
+    border: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+}
+main .contact button:hover{
+    box-shadow: 0px 0px 3px 3px #fff;
+
+    
+    
+
+}
+footer{
+    
+    background-color: red;
+    bottom: 0;
+    height: 45px;
+    border-radius:0 0 15px 15px  ;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-weight: bold;
+    
+
+}

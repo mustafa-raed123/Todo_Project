@@ -43,9 +43,15 @@ header ul li{
      cursor: pointer;
      font-weight: bold;
      font-size: 18px;
-     transition-duration: 0.3s;
+     
+     
 }
-header ul li:hover{
+header ul li a{
+    text-decoration: none;
+    color: #000;
+    transition-duration: 0.3s;
+}
+header ul li a:hover{
     color: orange;
     text-shadow: 1px 1px 2px white;
 }
@@ -89,6 +95,6 @@ footer{
     text-align: center;
     line-height: 45px;
     font-weight: bold;
-    
+
 
 }
