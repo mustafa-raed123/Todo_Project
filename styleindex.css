@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+
+.page{
+    width: 450px;
+    background-color: #00aa88;
+    height: 550px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    margin: auto;
+    box-shadow:  0px 5px 10px 0px  #000;
+    margin-top: 10px;
+    border-radius: 15px;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+header .logo{
+    font-size: 26px;
+    font-weight: bold;
+    
+}
+header ul{
+    list-style: none;
+    font-family: cursive;
+    margin-top: 10px;
+    display: flex;
+    
+
+}
+header ul li{
+     padding-left:15px; 
+     cursor: pointer;
+     font-weight: bold;
+     font-size: 18px;
+     transition-duration: 0.3s;
+}
+header ul li:hover{
+    color: orange;
+    text-shadow: 1px 1px 2px white;
+}
+main {
+   
+     margin:5px auto;
+     font-size: 20px;
+
+}
+table, td, th{
+    border: 1px solid;
+    padding: 20px;
+    
+}
+
+main table thead{
+    background-color: orange;
+}
+main table{
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+main table tbody{
+    font-weight:500 ;
+}
+main table tbody tr td:last-child{
+    background-color: green;
+    
+}
+main table tbody tr:first-child td:last-child {
+    background-color: gray;
+}
+footer{
+    margin-top: 106px;
+    background-color: red;
+    bottom: 0;
+    height: 45px;
+    border-radius:0 0 15px 15px  ;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-weight: bold;
+    
+
+}
