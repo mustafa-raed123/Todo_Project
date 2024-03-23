@@ -27,3 +27,28 @@ if(message){
         alert ("Welcome Message"  )
     }
 }
+let arr =[];
+function studentOrNot(){
+    let student = prompt("are you student?  yes / no");
+    
+    arr.push(student || "invalid");
+   
+}
+function marridOrNot(){
+    let marrid = prompt("are you marrid?  yes / no");
+    arr.push(marrid || "invalid");
+   
+}
+
+
+function workOrNot(){
+    
+    let work = prompt("are you work?  yes / no");
+    arr.push(work || "invalid")
+    
+}
+studentOrNot();
+marridOrNot();
+workOrNot();
+
+console.log(arr);
