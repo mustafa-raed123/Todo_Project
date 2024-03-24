@@ -50,10 +50,7 @@ function answerquestion(arr){
     }
     return arr;
 }
-
 console.log(answerquestion(arr))
 
-marridOrNot();
-workOrNot();
 
-console.log(arr);
+
