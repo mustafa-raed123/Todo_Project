@@ -28,27 +28,31 @@ if(message){
     }
 }
 let arr =[];
-
-let student = prompt("are you student?  yes / no");
-    arr.push(student);
+function studentOrNot(){
+    let student = prompt("are you student?  yes / no");
+    
+    arr.push(student || "invalid");
+   
+}
+function marridOrNot(){
     let marrid = prompt("are you marrid?  yes / no");
-    arr.push(marrid);
-    let work = prompt("are you work?  yes / no");
-    arr.push(work);
-function answerquestion(arr){
-
-    for (let index = 0; index < arr.length; index++) {
-        if(arr[index] ==''){
-            console.log("invalid");
-            arr[index] ="invalid";
-                   
-        }
-        if(arr[index] !="yes" && arr[index]!="no"){
-            console.log("the answer should be 'yes or no'")
-            arr[index] = "invalid";       
-        }      
-    }
-    return arr;
+    arr.push(marrid || "invalid");
+   
 }
 
-console.log(answerquestion(arr))
+
+function workOrNot(){
+    
+    let work = prompt("are you work?  yes / no");
+    arr.push(work || "invalid")
+    
+}
+studentOrNot();
+marridOrNot();
+workOrNot();
+function printarray(arr){
+    arr.forEach((er)=>{
+        console.log(er)
+    })
+}
+printarray(arr)
